@@ -1,0 +1,9 @@
+IN ORDER TO WRITE THE FOLLOWING COMMAND:
+
+- Copy the mute.js file and replace everything with unmute.
+- take out the mongodb code
+- make a check to see if the user is muted
+- assign the member role and remove the muted role from the user
+- take out anything necessary (member.send functions, etc.)
+
+all set!
