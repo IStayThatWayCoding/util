@@ -1,4 +1,4 @@
-const { Discord } = require("discord.js")
+const { MessageEmbed } = require("discord.js")
 
 module.exports = {
     name: 'purge',
@@ -13,11 +13,11 @@ module.exports = {
         await message.channel.bulkDelete(parseInt(args[0]) + 1)
             .catch(err => console.log(err))
 
-        let embed = new Discord.MessageEmbed()
+        let embed = new MessageEmbed()
         .setTitle("Clearing Messages")
         .setColor("#42f587")
-        .setDescription(`✔️ - ${args[0]} messages have been deleted.`)
-        
+        .setDescription(`✔️ - ${args[0]} messages have been deleted.`);
+
         message.channel.send(embed);
     }
 }
