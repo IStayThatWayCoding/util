@@ -1,8 +1,8 @@
 module.exports = bot => {
     console.log(`${bot.user.username} is online`);
     
-    bot.user.setActivity("the snow!", {
-      type: "WATCHING"
+    bot.user.setActivity("to some christmas music!", {
+      type: "LISTENING"
 //       url: "https://www.twitch.tv/istaythatway"
     });
 }
