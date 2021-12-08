@@ -47,7 +47,7 @@ async function helpMSG(bot, message) {
         .setColor(colors.cream)
         .setTitle(`${bot.user.username} - Help`)
         .setThumbnail(bot.user.avatarURL())
-        .setDescription(`Server Prefix: \`${guildDB.prefix}\`\n\nFor a full list of commands, please type \`${guildDB.prefix}commands\` \n\nTo see more info about a specific command, please type \`${guildDB.prefix}help <command>\` without the \`<>\``)
+        .setDescription(`Server Prefix: \`${guildDB.prefix}\`\n\nFor a full list of commands, please type \`${guildDB.prefix}commands\` \n\nTo see more info about a specific command, please type \`${guildDB.prefix}help <command>\` without the \`<>\`\n\nJoin the support server [here](dsc.gg/util-support)`)
         .setFooter(process.env.FOOTER);
     message.channel.send(embed);
 }

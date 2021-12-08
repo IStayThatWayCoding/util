@@ -1,3 +1,5 @@
+const { Discord } = require("discord.js")
+
 module.exports = {
     name: 'purge',
     aliases: ['clear'],
@@ -10,6 +12,12 @@ module.exports = {
         if(parseInt(args[0]) > 100) return message.channel.send('The max amount of messages that I can delete is **100**')
         await message.channel.bulkDelete(parseInt(args[0]) + 1)
             .catch(err => console.log(err))
-        message.channel.send(`${args[0]}` + " messages have been deleted.")
+
+        let embed = new Discord.MessageEmbed()
+        .setTitle("Clearing Messages")
+        .setColor("#42f587")
+        .setDescription(`✔️ - ${args[0]} messages have been deleted.`)
+        
+        message.channel.send(embed);
     }
 }
