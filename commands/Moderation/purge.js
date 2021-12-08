@@ -16,7 +16,7 @@ module.exports = {
         let embed = new MessageEmbed()
         .setTitle("Clearing Messages")
         .setColor("#42f587")
-        .setDescription(`✔️ - ${args[0]} messages have been deleted.`);
+        .setDescription(`☑️ - **${args[0]}** messages have been deleted.`);
 
         message.channel.send(embed);
     }
