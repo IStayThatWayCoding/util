@@ -18,6 +18,6 @@ module.exports = {
         .setColor("#42f587")
         .setDescription(`☑️ - **${args[0]}** messages have been deleted.`);
 
-        message.channel.send(embed);
+        message.channel.send(embed).then(m => m.delete({timeout: 100}));
     }
 }
